@@ -1,0 +1,35 @@
+
+.buttons {
+    margin-top: 0.5em;
+}
+
+.fruits {
+    width: 40%;
+    margin: auto;
+    background-color: lightblue;
+    padding : 1em;
+    font-family: arial;
+    border : 0.25em solid black;
+    border-radius: 2em;
+}
+
+.fruits > .message {
+    padding: 1em;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 2em;
+    width: 90%;
+    background-color: lightgrey;
+}
+
+.fruitQty {
+    padding : 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    width: 3em;
+}
+
+.languages {
+    margin-top : 0.5em;
+}

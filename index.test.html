@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.4.2/mocha.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.4.2/mocha.css" />
+        <link rel="stylesheet" href="fruits.css">
+    </head>
+    <body>
+
+        <div class="fruits">
+            <h1>Buy fruit</h1>
+            Number of fruit : <input type="number" name="" value="" class="fruitQty">
+
+            <div class="languages">
+                <div class="">
+                    <input type="radio" name="fruit" value="Apples" class="fruit">Apples
+                </div>
+                <div class="">
+                    <input type="radio" name="fruit" value="Pears" class="fruit">Pears
+                </div>
+                <div class="">
+                    <input type="radio" name="fruit" value="Bananas" class="fruit">Bananas
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" name="" value="Buy">
+                <input type="button" name="" value="Clear">
+            </div>
+
+            <div class="message">
+                You bought 3 apples at a total cost of R5.75
+            </div>
+        </div>
+
+        <div id="mocha">
+        </div>
+        <script>
+            mocha.setup('bdd')
+            const assert = chai.assert;
+
+        </script>
+
+        <script src="counter.js" charset="utf-8"></script>
+        <script src="test/fruitshop.dom.tests.js" charset="utf-8"></script>
+        <script src="test/fruitshop.logic.tests.js" charset="utf-8"></script>
+        <script>
+            mocha.checkLeaks();
+            mocha.globals(['jQuery']);
+            mocha.run();
+        </script>
+
+    </body>
+</html>
