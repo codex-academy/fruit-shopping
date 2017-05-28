@@ -1,4 +1,4 @@
-    describe('The Fruit shop DOM code', function(){
+    describe('The Fruitshop DOM code', function(){
 
         it('should be able to get the fruit and quantity selected', function(){
 
