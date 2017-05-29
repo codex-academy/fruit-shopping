@@ -11,6 +11,31 @@
     </head>
     <body>
 
+        <div class="fruits">
+            <h1>Buy fruit</h1>
+            Number of fruit : <input type="number" name="" value="" class="fruitQty">
+
+            <div class="languages">
+                <div class="">
+                    <input type="radio" name="fruit" value="apples" class="fruit">Apples
+                </div>
+                <div class="">
+                    <input type="radio" name="fruit" value="pears" class="fruit">Pears
+                </div>
+                <div class="">
+                    <input type="radio" name="fruit" value="bananas" class="fruit">Bananas
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" name="" value="Buy" class="buyButton">
+                <input type="button" name="" value="Clear" class="clearButton">
+            </div>
+
+            <div class="message">
+            </div>
+        </div>
+
         <div id="mocha">
         </div>
         <script>
@@ -19,11 +44,11 @@
 
         </script>
 
-        <script src="test/fruitshop.dom.js" charset="utf-8"></script>
-        <script src="test/fruitshop.logic.js" charset="utf-8"></script>
+        <script src="fruitshop.dom.js" charset="utf-8"></script>
+        <script src="fruitshop.logic.js" charset="utf-8"></script>
         <script src="test/fruitshop.dom.tests.js" charset="utf-8"></script>
         <script src="test/fruitshop.logic.tests.js" charset="utf-8"></script>
-        
+
         <script>
             mocha.checkLeaks();
             mocha.globals(['jQuery']);
